@@ -3,25 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"gulp watch\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "14.1.1",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.1"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.18",
+    "concurrently": "^8.2.2",
     "eslint": "^8",
-    "eslint-config-next": "14.1.1"
+    "eslint-config-next": "14.1.1",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-debug": "^5.0.1",
+    "gulp-less": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "less": "^4.2.0",
+    "less-plugin-npm-import": "^2.1.0",
+    "less-watch-compiler": "^1.16.3",
+    "through2": "^4.0.2",
+    "typescript": "^5"
   }
 }
